@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+header {
+  background: #134e7e;
+  background: linear-gradient(317deg, #134e7e 7%, #2a72c2 44%, #1b8bff 72%);
+}
+
+header .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  color: #feffff;
+  font-size: 24px;
+  text-align: center;
+  height: 124px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+header li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .logo img {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */
