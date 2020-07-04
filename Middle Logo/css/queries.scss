@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  //CSS
+  .mobile-nav {
+    display: none;
+  }
 }
 
 /* 
@@ -13,7 +16,9 @@
   */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  //CSS
+  .mobile-nav {
+    display: none;
+  }
 }
 
 /* 
@@ -22,6 +27,9 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
   //CSS
 }
 
@@ -31,6 +39,9 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 /* 
@@ -40,17 +51,30 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   header {
-    li {
-      display: none;
+    .list {
+      li {
+        display: none;
+      }
     }
   }
-}
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-  //CSS
+  .mobile-nav {
+    display: block;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 0px;
+    .mobile-logo {
+      align-self: center;
+      padding: 20px;
+      img {
+        width: 70px;
+      }
+    }
+    .mobile-nav-item {
+    }
+    .menu {
+    }
+  }
 }
