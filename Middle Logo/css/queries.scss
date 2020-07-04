@@ -60,21 +60,49 @@
   .mobile-nav {
     display: block;
     display: grid;
-    grid-template-columns: 10fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     color: white;
     font-family: "Poppins", sans-serif;
     position: absolute;
     top: 0px;
     .mobile-logo {
-      align-self: center;
+      //   align-self: center;
       padding: 20px;
       img {
         width: 70px;
       }
     }
-    .mobile-nav-item {
-    }
-    .menu {
+    .sandwich-menu {
+      grid-column: 6/8;
+      display: grid;
+      .sandwich-btn {
+        cursor: pointer;
+        font-size: 30px;
+        align-self: center;
+        justify-self: center;
+        &:hover {
+          color: red;
+        }
+      }
+      .mobile-drawer-items {
+        display: none;
+        background-color: black;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        li {
+          text-align: center;
+          border-bottom: 1px solid white;
+          padding: 10px 0;
+          transition: width 2s;
+          grid-row: 2;
+          &:hover {
+            background-color: red;
+          }
+        }
+      }
     }
   }
 }
