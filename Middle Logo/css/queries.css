@@ -83,11 +83,15 @@
         justify-self: center;
   }
   .mobile-nav .sandwich-menu .sandwich-btn:hover {
-    color: red;
+    color: #DA4141;
   }
   .mobile-nav .sandwich-menu .mobile-drawer-items {
     display: none;
-    background-color: black;
+    background-color: #525252;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 200px;
   }
   .mobile-nav .sandwich-menu .mobile-drawer-items a {
     color: white;
@@ -95,6 +99,7 @@
   }
   .mobile-nav .sandwich-menu .mobile-drawer-items li {
     text-align: center;
+    margin: 0 auto;
     border-bottom: 1px solid white;
     padding: 10px 0;
     -webkit-transition: width 2s;
@@ -103,7 +108,7 @@
     grid-row: 2;
   }
   .mobile-nav .sandwich-menu .mobile-drawer-items li:hover {
-    background-color: red;
+    background-color: #DA4141;
   }
 }
 /*# sourceMappingURL=queries.css.map */
