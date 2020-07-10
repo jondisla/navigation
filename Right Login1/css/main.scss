@@ -1,0 +1,41 @@
+$font-color: #0088ff;
+
+header{
+    background:rgb(236, 236, 236);
+    height: 125px;
+    .fullwidth-nav{
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        color: $font-color;
+        .logo{
+            img{
+            width: 100px;
+            }
+        }
+        .links{
+            border:1px solid rgb(180, 180, 180);
+            border-radius: 50px;
+            text-align: center;
+            grid-column:2;
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            height: 80px;
+            align-items: center;
+            .nav-item{
+                font-size: 24px;
+            }
+            li{
+                align-self: center;
+            }
+        }
+        .login{
+            font-size: 24px !important;
+            width: 150px;
+            grid-column:7;
+            grid-row: 1;
+            padding: 20px;
+            align-self: center;
+        }
+    }
+}

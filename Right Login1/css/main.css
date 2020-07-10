@@ -1,0 +1,58 @@
+header {
+  background: #ececec;
+  height: 125px;
+}
+
+header .fullwidth-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
+  color: #0088ff;
+}
+
+header .fullwidth-nav .logo img {
+  width: 100px;
+}
+
+header .fullwidth-nav .links {
+  border: 1px solid #b4b4b4;
+  border-radius: 50px;
+  text-align: center;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .fullwidth-nav .links .nav-item {
+  font-size: 24px;
+}
+
+header .fullwidth-nav .links li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .fullwidth-nav .login {
+  font-size: 24px !important;
+  width: 150px;
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=main.css.map */
